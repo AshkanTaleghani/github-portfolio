@@ -2,6 +2,7 @@ html{
     font-size: 20px;
     background: #9b2a9b;
 background: linear-gradient(45deg,rgba(155, 42, 155, 1) 0%, rgba(87, 121, 199, 1) 75%, rgba(83, 201, 237, 1) 100%);
+color: rgb(201, 201, 201);
 }
 .main-container{
     width: 100%;
@@ -12,7 +13,7 @@ background: linear-gradient(45deg,rgba(155, 42, 155, 1) 0%, rgba(87, 121, 199, 1
 
 }
 .port-card{
-    width: 75%;
+    width: 70%;
     height: 800px;
     background-color:rgb(16 18 27 / 50%) ;
     margin-top: 1rem;
@@ -22,10 +23,11 @@ background: linear-gradient(45deg,rgba(155, 42, 155, 1) 0%, rgba(87, 121, 199, 1
 .port-card .left-side{
     width: 30%;
     border-right: 1px solid rgba(175, 175, 175, 0.158);
-    padding: 1rem;
+    padding: 1rem 0 0 .5rem;
 }
 .port-card .right-side{
-    width: 70%;;
+    width: 70%;
+    overflow: auto;
 }
 
 .left-side .prof-pic{
@@ -44,4 +46,28 @@ background: linear-gradient(45deg,rgba(155, 42, 155, 1) 0%, rgba(87, 121, 199, 1
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.left-side .category > h3{
+    margin-bottom: .5rem;
+}
+.left-side .category > div{
+    padding: .5rem 0rem .5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.left-side .category > div:hover{
+    background-color: rgba(16 18 27 / 40%);
+}
+
+.right-side > div {
+    margin:1rem
+}
+.right-side .about > div{
+    background-color: rgba(16 18 27 / 30%);
+    padding: .5rem;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.right-side .about > h2{
+margin-bottom: .5rem;
 }
